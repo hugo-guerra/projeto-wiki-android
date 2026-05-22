@@ -143,6 +143,11 @@ picture > img{
     height: auto;
 }
 
+picture{
+    display: block;
+    width: 100%;
+}
+
 div.video{
     background-color: var(--cor5);
     padding: 20px;
