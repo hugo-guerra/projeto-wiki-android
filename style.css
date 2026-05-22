@@ -7,6 +7,12 @@
     src: url('fontes/idroid.otf') format('opentype');
 }
 
+@media (max-width: 600px){
+    .lista{
+        columns: 1;
+    }
+}
+
 :root{
     --cor0: #ebe5c5;
     --cor1: #83e1ad;
@@ -23,11 +29,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
+    margin: 0;
+    overflow-x: hidden;
 }
 
 header{
@@ -172,6 +181,12 @@ div.video > iframe{
 
 .lista > li::before{
     content: '✔️ ';
+}
+
+.lista li{
+    break-inside: avoid;
+    margin-bottom: 10px;
+    font-size: 0.9em;
 }
 
 footer{
