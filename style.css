@@ -33,7 +33,7 @@
 }
 
 body{
-    background-color: var(--cor0);
+    background-image: url('imagens/wallpaper001.jpg');
     font-family: var(--fonte-padrao);
     margin: 0;
     overflow-x: hidden;
